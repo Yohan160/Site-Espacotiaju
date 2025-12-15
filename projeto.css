@@ -122,8 +122,6 @@ body{
 }
 
 .rodape{
-    top: 1050px;
-    position: absolute;
     background-image: url(img/Rectangle\ 50.png);
     background-size: cover;
     background-position: center;
@@ -135,13 +133,13 @@ body{
 
 .logo-rodape img{
     position: absolute;
-    bottom: 7vh;
+    bottom: 8vh;
     left: 7vh;
     width: 45vh;
 }
 .inf-rodape{
-    width: 100%;
-    bottom: 7vh;
+    width: 65%;
+    bottom: 8vh;
     left:28%;
     position: absolute;
     display: flex;
@@ -153,7 +151,7 @@ body{
 
 .insta, .facebook, .youtube, .whatsapp, .email{
     display: flex;
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
 
 .redes, .formas-contato, .localizacao{
@@ -174,6 +172,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
 
 @media (max-width:1300px) and (min-width:701px){
     
@@ -221,6 +220,9 @@ body{
 }
 
 @media (max-width:750px){
+    body{
+        background-color: rgb(255, 172, 78);
+    }
         .navbar{
         height: 7%;
     }
@@ -287,7 +289,7 @@ body{
     .Projeto{
     position: absolute;
     overflow-y: auto;
-    height:60vh;
+    height: auto;
     top: 10vh;
     left: 2vh;
     max-width: 90%;
@@ -303,7 +305,7 @@ body{
         display: none;
     }
     .frente img{
-        height: 700px;
+        display: none;
     }
 
         .logo-rodape img{
