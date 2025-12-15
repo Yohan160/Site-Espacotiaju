@@ -592,72 +592,58 @@ html {
         margin-right: 4vh;
     }
 
-    @media (max-width:700px){
+    @media (max-width: 700px) {
 
-    html, body{
-        width: 100%;
-        overflow-x: hidden;
-        position: relative;
+        .nav-list {
+            position: absolute;
+            top: 100%;
+            right: -5%;
+            background: #FFA500;
+            color: #000;
+            width: 200px;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: 
+                max-height 0.8s ease,
+                opacity 0.1s ease,
+                transform 0.7s ease;
+        }
+        .nav-list.active {
+            max-height: 500px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        .nav-list a {
+            color: #000;
+            font-weight: 600;
+        }
     }
-
-    .navbar{
-        height: 7%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    .hamburger {
-        display: flex;
-        margin-right: 4vh;
-    }
-
-    .nav-list {
-        position: absolute;
-        top: 100%;
-        right: 0; /* 🔧 antes -5% */
-        background: #FFA500;
-        color: #000;
-        width: 200px;
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-        overflow: hidden;
-        max-height: 0;
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: 
-            max-height 0.8s ease,
-            opacity 0.1s ease,
-            transform 0.7s ease;
-    }
-
-    .nav-list.active {
-        max-height: 500px;
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .nav-list a {
-        color: #000;
-        font-weight: 600;
-    }
-
+    
+    
     .Logo1{
-        width: 6.5vh;
+    width: 6.5vh;
     }
-
     .Tela-inicial{
         margin-top: 2vh;
         height: 44vh;
         width: 100%;
-        max-width: 100%;
     }
-
-    .Inicio{
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
+      .carrossel-pai,
+  .carrossel-imagens {
+    display: none !important;
+    position: static !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
     .desc-inicio{
         padding-top: 1vh;
         height: 20vh;
@@ -669,12 +655,10 @@ html {
     .redes-sociais{
         display: none;
     }
-
     .Logo-inicio{
         top: 2.2%;
         width: 25%;
     }
-
     .desc-inicio h2{
         font-size: 25px;
     }
@@ -692,18 +676,6 @@ html {
         font-size: 0.5rem;
     }
 
-    /* 🔧 REMOVE COMPLETAMENTE O CARROSSEL NO MOBILE */
-    .carrossel-pai,
-    .carrossel-imagens{
-        display: none !important;
-        position: static !important;
-        width: 0 !important;
-        height: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        overflow: hidden !important;
-    }
-
     .Nossas-aulas2{
         margin: 0;
         margin-top: 5vh;
@@ -712,17 +684,13 @@ html {
         align-items: center;
         text-align: center;
     }
-
     .Nossas-aulas h1{
         font-size: 2.5rem;
     }
-
     .Nossas-aulas2 p{
         font-size: 1.1em;
         width: 22rem;
-        max-width: 100%;
     }
-
     .Nossas-aulas ul{
         display: flex;
         flex-direction: column;
@@ -735,100 +703,76 @@ html {
         height: 8vh;
         font-size: 1.5rem;
     }
-
     .Impacto{
         max-width: 100%;
         height: 62vh;
-        overflow-x: hidden;
+        overflow-y: hidden;
     }
-
     .desc-impacto{
         width: 100%;
         height: 100%;
         background-color: #ffc870d5;
     }
-
     .desc-impacto h1{
         font-size: 1.5rem;
     }
-
     .desc-impacto p{
         width: 80%;
         max-height: 80%;
         font-size: 1rem;
         margin-right: 4vh;
     }
-
     .desc-impacto button{
         width: 25vh;
         height: 7vh;
         font-size: 0.8rem;
         margin-top: 3vh;
     }
-
     .container-fc{
         flex-direction: column;
-        max-width: 100%;
     }
-
     .forma-colaborar{
-        width: 90%; /* 🔧 antes vh */
-        max-width: 360px;
-        height: auto;
+        width: 35vh;
+        height: 40%;
         font-size: 1.15rem;
     }
-
     .Como-ajudar button{
         width: 80%;
     }
-
     .desc-espaco{
         height: 30vh;
         overflow-y: auto;
-        max-width: 100%;
-        overflow-x: hidden;
     }
-
     .desc-espaco1{
         width: 55%;
         margin-left: 0;
     }
-
     .desc-espaco1 h1{
         margin-left: 5px;
         font-size: 1.5rem;
     }
-
     .desc-espaco1 p{
         font-size: 80%;
         font-weight: 700;
     }
-
     .quem-somos{
         text-align: center;
         font-size: 1.7rem;
     }
-
     .rodape{
         position: relative;
         height: 35vh;
         width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
     }
-
     .logo-rodape img{
         display: none;
     }
-
     .rodape h1{
         font-size: 0.80rem;
     }
-
     .redes, .formas-contato, .localizacao{
         width: 40%;
     }
-
     .inf-rodape{
         left: 1vh;
         bottom: 9vh;
@@ -840,8 +784,6 @@ html {
         width: 80px;
         font-weight: 600;
     }
-}
-
 }
 
 @media (max-width: 600px) and (min-width:540px){
