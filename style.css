@@ -406,12 +406,14 @@ html {
     transform: scale(1.05);
 }
 .desc-espaco{
+    box-sizing: border-box;
     padding: 10px;
     background-image: url(img/Frame\ 19.png);
     background-size: cover;
     background-position: center;
     height: 82vh;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .desc-espaco1{
