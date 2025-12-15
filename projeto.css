@@ -289,7 +289,7 @@ body{
     .Projeto{
     position: absolute;
     overflow-y: auto;
-    height: auto;
+    min-height: 60dvh;
     top: 10vh;
     left: 2vh;
     max-width: 90%;
