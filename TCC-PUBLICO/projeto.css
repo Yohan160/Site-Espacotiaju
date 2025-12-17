@@ -295,13 +295,14 @@ body{
     font-size: 4rem;
     }
     .Projeto p{
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: bold;
     }
     
     .rodape{
+        display: flex;
         top: 70dvh;
-        height: 36vh;
+        height: 35dvh;
     }
 
     .logo-rodape img{
@@ -313,8 +314,9 @@ body{
     }
 
     .inf-rodape{
+        display: flex;
         left: 1vh;
-        bottom: 10vh;
+        bottom: 10dvh;
         font-size: 0.7rem;
         width: 95%;
     }
@@ -324,11 +326,3 @@ body{
         display: none;
     }
 }
-
-/* ajustes finos mobile */
-@media (max-width:600px) and (min-width:540px){
-    .Projeto p{
-        font-size: 0.87rem;
-    }
-}
-
