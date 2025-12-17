@@ -190,48 +190,7 @@ body{
 
 /* NOTEBOOK */
 @media (max-width:1200px) and (min-width:701px){
-   .Projeto{
-      margin-left: -3vh;
-      max-width: 70%;
-      font-size: 1.1rem;
-      overflow-y: auto;
-      height: 54vh;
-      box-sizing: border-box;
-   } 
 
-   .Projeto h1{
-      font-size: 3rem;
-      margin-left: 1vh;
-   }
-
-   .frente img{
-      max-width: 60vw;
-      height: 75vh;
-   }
-
-   .fundo{
-      height: 100vw;
-   }
-
-   .logo-rodape img{
-      display: none;
-   }
-
-   .rodape{
-      top: 95vw;
-      height: 30vh;
-   }
-
-   .inf-rodape{
-      bottom: 5vh;
-      left: 10%;
-      font-size: 1.2rem;
-      width: 80%;
-   }
-
-   .inf-rodape h1{
-      font-size: 1.4rem;
-   }
 }
 
 /* CELULAR */
@@ -298,29 +257,35 @@ body{
         font-size: 1.1rem;
         font-weight: bold;
     }
-    
-    .rodape{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 70dvh;
-        height: 35dvh;
+      .quem-somos{
+        text-align: center;
+        font-size: 1.7rem;
     }
-
+    .rodape{
+        position: relative;
+        top: 70dvh;
+        height: 35vh;
+        width: 100%;
+    }
     .logo-rodape img{
         display: none;
     }
-
     .rodape h1{
-        font-size: 0.8rem;
+        font-size: 0.80rem;
+    }
+    .redes, .formas-contato, .localizacao{
+        width: 40%;
+    }
+    .inf-rodape{
+        left: 1vh;
+        bottom: 9vh;
+        font-size: 0.7rem;
+        width: 100%;
     }
 
-    .inf-rodape{
-        display: flex;
-        left: 1vh;
-        bottom: 10dvh;
-        font-size: 1rem;
-        width: 100%;
+    .inf-rodape p{
+        width: 80px;
+        font-weight: 600;
     }
 
     .fundo,
