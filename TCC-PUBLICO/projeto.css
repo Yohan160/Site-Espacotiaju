@@ -261,32 +261,42 @@ body{
         text-align: center;
         font-size: 1.7rem;
     }
-    .rodape{
-        position: relative;
-        top: 70dvh;
-        height: 35vh;
-        width: 100%;
-    }
-    .logo-rodape img{
-        display: none;
-    }
-    .rodape h1{
-        font-size: 0.80rem;
-    }
-    .redes, .formas-contato, .localizacao{
-        width: 40%;
-    }
-    .inf-rodape{
-        left: 1vh;
-        bottom: 9vh;
-        font-size: 0.7rem;
-        width: 100%;
-    }
+.rodape{
+    position: relative;
+    top: 70dvh;
+    height: 40dvh;
+    display: flex;
+    align-items: center;
+  }
 
-    .inf-rodape p{
-        width: 80px;
-        font-weight: 600;
-    }
+  .inf-rodape{
+    position: relative;   /* 🔥 ESSENCIAL */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 2vh;
+    font-size: 0.8rem;
+  }
+
+  .redes,
+  .formas-contato,
+  .localizacao{
+    width: 100%;          /* 🔥 */
+    align-items: center;
+  }
+
+  .rodape h1{
+    font-size: 0.9rem;
+  }
+
+  .inf-rodape p{
+    width: auto;          /* 🔥 */
+  }
+
+  .logo-rodape img{
+    display: none;
+  }
 
     .fundo,
     .frente img{
