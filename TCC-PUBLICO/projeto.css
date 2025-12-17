@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.navbar{
+    height: 13vh;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(203, 16, 255), rgb(255, 169, 20) 60%);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: 10;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 1.4em;
+    margin-right: 5%;
+}
+
+.Logo{
+    position: absolute;
+    left: 7%;
+}
+
+.Logo1{
+    width: 12vh;
+    height: auto;
+    display: flex;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    transition: 500ms;
+    font-weight: 600;
+}
+
+.nav-item a:hover{
+    color: rgb(233, 67, 255);
+}
+
+#Colabore{
+    width: 10em;
+    height: 3.5em;
+    background-color: rgb(255, 0, 234); 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4vh;
+    transition: 500ms;
+}
+
+#Colabore:hover{
+    background-color: rgb(213, 77, 255);
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+}
+
+.fundo{
+    background-image: url(img/Mídia-_5_\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1117px;
+    animation: ir-pro-lado 15s ease-in-out infinite;
+}
+
+@keyframes ir-pro-lado{
+    50%{
+        transform: translateX(57%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.frente{
+    position: absolute;
+    top: 15px;
+    height: 150px;
+}
+
+.Projeto{
+    position: absolute;
+    top: 17vh;
+    left: 5vh;
+    max-width: 65%;
+    font-size: 1.7rem;
+}
+
+.Projeto h1{
+    font-size: 5rem;
+}
+
+.rodape{
+    top: 1050px;
+    position: absolute;
+    background-image: url(img/Rectangle\ 50.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-rodape img{
+    position: absolute;
+    bottom: 8vh;
+    left: 7vh;
+    width: 45vh;
+}
+
+.inf-rodape{
+    width: 100%;
+    bottom: 8vh;
+    left:28%;
+    position: absolute;
+    display: flex;
+    gap: 3%;
+    font-size: clamp(1rem, 1.7rem, 1.8rem);
+    color: black;
+    text-align: justify;
+}
+
+.insta, .facebook, .youtube, .whatsapp, .email{
+    display: flex;
+    margin-top: 2vh;
+}
+
+.redes, .formas-contato, .localizacao{
+    align-items: center;
+}
+
+.redes, .formas-contato, p{
+    margin-left: 1vh;
+}
+
+.rodape h1{
+    font-size: 2.5rem;
+}
+
+.localizacao{
+    max-width: 25vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:1400px){
+    .Projeto p{
+        font-size: 1.47rem;
+    }
+
+    .Projeto{
+        max-width: 58%;
+    }
+    .frente img{
+        width:105vh;
+        height: 150vh;
+    }
+}
+
+/* NOTEBOOK */
+@media (max-width:1200px) and (min-width:701px){
+   .Projeto{
+      margin-left: -3vh;
+      max-width: 70%;
+      font-size: 1.1rem;
+      overflow-y: auto;
+      height: 54vh;
+      box-sizing: border-box;
+   } 
+
+   .Projeto h1{
+      font-size: 3rem;
+      margin-left: 1vh;
+   }
+
+   .frente img{
+      max-width: 60vw;
+      height: 75vh;
+   }
+
+   .fundo{
+      height: 100vw;
+   }
+
+   .logo-rodape img{
+      display: none;
+   }
+
+   .rodape{
+      top: 95vw;
+      height: 30vh;
+   }
+
+   .inf-rodape{
+      bottom: 5vh;
+      left: 10%;
+      font-size: 1.2rem;
+      width: 80%;
+   }
+
+   .inf-rodape h1{
+      font-size: 1.4rem;
+   }
+}
+
+/* CELULAR */
+@media (max-width:750px){
+    body{
+        background-color: rgb(255, 172, 78);
+    }
+
+    .navbar{
+        height: 7%;
+    }
+
+        .nav-list {
+            position: absolute;
+            top: 100%;
+            right: -5%;
+            background: #FFA500;
+            color: #000;
+            width: 200px;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: 
+                max-height 0.8s ease,
+                opacity 0.1s ease,
+                transform 0.7s ease;
+        }
+        .nav-list.active {
+            max-height: 500px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        .nav-list a {
+            color: #000;
+            font-weight: 600;
+        }
+
+    .hamburger{
+        display: flex;
+        margin-right: 4vh;
+    }
+
+    .Logo1{
+        width: 6vh;
+    }
+
+
+    .Projeto{
+        overflow-y: auto;
+        height: 59dvh;
+        top: 10vh;
+        left: 2vh;
+        max-width: 90%;
+    }
+    .Projeto h1{
+    font-size: 4rem;
+    }
+    .Projeto p{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .rodape{
+        top: 70dvh;
+        height: 36vh;
+    }
+
+    .logo-rodape img{
+        display: none;
+    }
+
+    .rodape h1{
+        font-size: 0.8rem;
+    }
+
+    .inf-rodape{
+        left: 1vh;
+        bottom: 10vh;
+        font-size: 0.7rem;
+        width: 95%;
+    }
+
+    .fundo,
+    .frente img{
+        display: none;
+    }
+}
+
+/* ajustes finos mobile */
+@media (max-width:600px) and (min-width:540px){
+    .Projeto p{
+        font-size: 0.87rem;
+    }
+}
+
