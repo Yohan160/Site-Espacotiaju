@@ -335,13 +335,17 @@ body{
 }
 
 @media (max-width:420px){
-    .Projeto{ height: 75vh; }
+    .Projeto{ height: 60dvh; }
 }
 
 @media (max-width:400px){
-    .Projeto{ height: 66vh; }
+    .Projeto{ height: 66dvh; }
 }
 
 @media (max-width:380px){
-    .Projeto{ height: 69vh; }
+    .Projeto{ height: 68dvh; }
+}
+
+@media (max-width:360px){
+    .Projeto { height: 70dvh;}
 }
